@@ -4,11 +4,10 @@ on: push
 
 jobs:
   my-first-job:
-    name: My first Job
     runs-on: ubuntu-latest
     steps:
     - run:
-        echo 'Good day!'.
+        echo 'Hello!'.
   my-second-job:
     name: My second Job
     runs-on: ubuntu-latest
