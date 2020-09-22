@@ -13,7 +13,7 @@ jobs:
     name: My second Job
     runs-on: ubuntu-latest
     steps:
-      - name: P
+      - name: Printing your name
         env:
           MY_VAR: My name is
           FIRST_NAME: John
