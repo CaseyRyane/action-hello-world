@@ -3,14 +3,21 @@ name: Greeting from Github
 on: push
 
 jobs:
-  my-job:
-    name: My Job
+  my-first-job:
+    name: My first Job
+    runs-on: ubuntu-latest
+    steps:
+    - run:
+        echo 'Good day!'.
+  my-second-job:
+    name: My second Job
     runs-on: ubuntu-latest
     steps:
     - name: Print a greeting
       env:
-        MY_VAR: Hi there! My name is
+        MY_VAR: My name is
         FIRST_NAME: John
         LAST_NAME: Doe
       run: |
         echo $MY_VAR $FIRST_NAME $LAST_NAME.
+        echo 'This is the first workflow we created'.
